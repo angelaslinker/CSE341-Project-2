@@ -25,7 +25,7 @@
         }
       }
     },
-    "/users/": {
+    "/makeup/": {
       "get": {
         "description": "",
         "produces": [
@@ -81,7 +81,7 @@
         }
       }
     },
-    "/users/{id}": {
+    "/makeup/{id}": {
       "get": {
         "description": "",
         "produces": [
