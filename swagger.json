@@ -5,7 +5,7 @@
     "description": "Makeup Api",
     "version": "1.0.0"
   },
-  "host": "https://project-2-iin6.onrender.com",
+  "host": "project-2-iin6.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
