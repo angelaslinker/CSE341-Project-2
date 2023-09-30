@@ -6,7 +6,7 @@ const doc = {
         description: 'Makeup Api'
     },
     host: 'localhost:3030',
-    schemes: ['https']
+    schemes: ['https', 'http']
 };
 
 const outputFile = './swagger.json';
