@@ -8,20 +8,6 @@ const makeupController = require('../controllers/makeup');
 
 const { isAuthenticated } = require("../middleware/authenticate");
 
-// router.get('/', makeupController.getAll);
-
-// router.get('/:id', makeupController.getSingle);
-
-// router.post('/', makeupController.createMakeup);
-
-// router.put('/:id', makeupController.updateMakeup);
-
-// router.delete('/:id', makeupController.deleteMakeup);
-
-// module.exports = router;
-
-
-
 
 router.get('/', makeupController.getAll);
 

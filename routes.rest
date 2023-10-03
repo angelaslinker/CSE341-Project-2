@@ -4,3 +4,10 @@ GET http://localhost:3030/makeup/#
 
 POST http://localhost:3030/makeup HTTP/1.1
 content-type: application/json
+
+GET http://localhost:3030/skincare
+
+GET http://localhost:3030/skincare/#
+
+POST http://localhost:3030/skincare HTTP/1.1
+content-type: application/json

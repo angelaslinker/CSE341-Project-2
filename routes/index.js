@@ -4,8 +4,11 @@ router.use('/', require('./swagger'));
 
 router.unsubscribe("/makeup", require("./makeup"));
 
-
 router.use('/makeup', require('./makeup'));
+
+router.unsubscribe("/skincare", require("./skincare"));
+
+router.use('/skincare', require('./skincare'));
 
 router.get('/login', passport.authenticate('github'), (req, res) => { });
 
