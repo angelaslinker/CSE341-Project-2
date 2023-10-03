@@ -1,10 +1,10 @@
 const isAuthenticated = (req, res, next) => {
     if (req.session.user === undefined) {
-        // Redirect to a login page or another appropriate page for authentication
-        return res.redirect('/login'); // Change '/login' to the actual login route
+        return res.status(400).json("You do not have access.");
     }
     next();
 };
+
 
 module.exports = {
     isAuthenticated
