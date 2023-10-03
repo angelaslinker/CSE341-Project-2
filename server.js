@@ -1,9 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongodb = require('./data/database');
-const passport = require('passport');
 const session = require('express-session');
-const githubStrategy = require('passport-github2').Strategy;
+const passport = require('passport');
+const GitHubStrategy = require('passport-github2').Strategy;
+
 const cors = require('cors');
 const app = express();
 
