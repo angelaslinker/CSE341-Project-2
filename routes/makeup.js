@@ -6,6 +6,8 @@ const validation = require('../middleware/validate');
 
 const makeupController = require('../controllers/makeup');
 
+const { isAuthenticated } = require("../middleware/authenticate");
+
 // router.get('/', makeupController.getAll);
 
 // router.get('/:id', makeupController.getSingle);
@@ -27,13 +29,13 @@ router.get('/', makeupController.getAll);
 router.get('/:id', makeupController.getSingle);
 
 
-router.post('/', validation.createMakeup, makeupController.createMakeup);
+router.post('/', isAuthenticated, makeupController.createMakeup);
 
 
-router.put('/:id', validation.createMakeup, makeupController.updateMakeup);
+router.put('/:id', isAuthenticated, makeupController.updateMakeup);
 
 
-router.delete('/:id', makeupController.deleteMakeup);
+router.delete('/:id', isAuthenticated, makeupController.deleteMakeup);
 
 
 module.exports = router;
