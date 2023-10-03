@@ -34,9 +34,9 @@ app
     .use(cors({ origin: '*' }))
     .use("/", require("./routes/index"));
 
-passport.use(new githubStrategy({
-    clientID: process.env.GITHUB_CLIENT_ID,
-    clientSecret: process.env.GITHUB_CLIENT_SECRET,
+passport.use(new GitHubStrategy({
+    clientID: process.env.GITHUB_CLIENT_ID, // Replace with your GitHub OAuth app's client ID
+    clientSecret: process.env.GITHUB_CLIENT_SECRET, // Replace with your GitHub OAuth app's client secret
     callbackURL: process.env.callbackURL
 },
     function (accessToken, refreshToken, profile, done) {
